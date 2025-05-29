@@ -1,66 +1,41 @@
-<title>Document</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper scissor game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class ="container">
+        <div class="score">
+            <p> Computer :
+                <span id ="computer_score">0 </span>
+            </p>
+            <p> You :
+                <span id ="user_score">0</span>
+            </p>
+        </div>
+        <div class="weapons">
+            <button onclick="checker('rock')"> <i class="far fa-hand-rock"></i>
+            <img src="https://imgs.search.brave.com/hf9Ke1SI3AZl-bDb3AlV2vbi0MLVtD3hja0nn2CZxgY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jb250/ZW50Lmluc3RydWN0/YWJsZXMuY29tL0Yw/Mi9CQlY5L0k3UTBU/RlRVL0YwMkJCVjlJ/N1EwVEZUVS5qcGc_/YXV0bz13ZWJwJmZp/dD1ib3VuZHMmZnJh/bWU9MWF1dG89d2Vi/cCZmcmFtZT0xJmhl/aWdodD0zMDA" alt="rock">
 
-<nav class="navbar">
-    <div class="logo">
-        <h1>Developergtm</h1>
+            </button>
+            <button onclick="checker('peper')"> <i class="far fa-hand-paper"></i>
+            <img src="https://imgs.search.brave.com/tAL5b6tCf4F-RQVMJlmQLcyYGxDD3oOODuP9wqpVqaY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jb250/ZW50Lmluc3RydWN0/YWJsZXMuY29tL0ZU/OS9ZTDY2L0k3UTBU/RkVLL0ZUOVlMNjZJ/N1EwVEZFSy5qcGc_/YXV0bz13ZWJwJmZp/dD1ib3VuZHMmZnJh/bWU9MWF1dG89d2Vi/cCZmcmFtZT0xJmhl/aWdodD0zMDA" alt="paper">
+            </button>
+            <button onclick="checker('scissor')"> <i class="far fa-hand-scissors">
+        <img src="https://imgs.search.brave.com/GODn1DwI3GAwgyzY5mxob3hf1x5CCPZT7ZiHVphuk_I/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jb250/ZW50Lmluc3RydWN0/YWJsZXMuY29tL0ZP/NC9NMUVGL0k3UTBU/RkVTL0ZPNE0xRUZJ/N1EwVEZFUy5qcGc_/YXV0bz13ZWJwJmZp/dD1ib3VuZHMmZnJh/bWU9MWF1dG89d2Vi/cCZmcmFtZT0xJmhl/aWdodD0zMDA" alt="scissor">
+            </i>
+        </button>
+        </div>
+        <div class="details">
+            <p id="user_choice"></p>
+            <p id="comp_choice"></p>
+            <p id="result"></p>
+        </div>
     </div>
+    <script src="script.js"></script>
+</body>
 
-    <div class="item">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Tools</a>
-        <a href="">Contact Us</a>
-    </div>
-</nav>
-
-
-<div class="main-sec">
-    <h1>Word Counter</h1>
-    <div class="column">
-
-
-
-            <textarea id="countfield" data-count-limit="140" rows="3"></textarea>
-
-
-            <p id="countlabel" class="label right countunder"><span id="countnumber">0</span> characters</p>
-
-
-
-    </div>
-</div>
-
-<section class="hero">
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio itaque error quo. Iusto, commodi libero
-        sunt a voluptates suscipit vitae veritatis placeat accusantium in, voluptatum itaque voluptas, sapiente et
-        dolores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio itaque error quo. Iusto,
-        commodi libero sunt a voluptates suscipit vitae veritatis placeat accusantium in, voluptatum itaque
-        voluptas, sapiente et dolores.</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio itaque error quo. Iusto, commodi libero
-        sunt a voluptates suscipit vitae veritatis placeat accusantium in, voluptatum itaque voluptas, sapiente et
-        dolores.</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio itaque error quo. Iusto, commodi libero
-        sunt a voluptates suscipit vitae veritatis placeat accusantium in, voluptatum itaque voluptas, sapiente et
-        dolores.</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio itaque error quo. Iusto, commodi libero
-        sunt a voluptates suscipit vitae veritatis placeat accusantium in, voluptatum itaque voluptas, sapiente et
-        dolores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit laborum, voluptatibus adipisci
-        eveniet dignissimos eos illum repudiandae dolorem nulla ducimus?</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio itaque error quo. Iusto, commodi libero
-        sunt a voluptates suscipit vitae veritatis placeat accusantium in, voluptatum itaque voluptas, sapiente et
-        dolores.</p>
-</section>
-
-<footer class="navbar">
-    <div class="logo">
-        <h1>Developergtm</h1>
-    </div>
-
-    <div class="item">
-        <a href="">About</a>
-        <a href="">Contact Us</a>
-        <a href="">Privacy Policy</a>
-        <a href="">Disclaimer</a>
-        <a href="">Terms Condition</a>
-    </div>
-</footer>
+</html>
